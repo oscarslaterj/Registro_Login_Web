@@ -9,6 +9,9 @@
     <title><%: Page.Title %> - Jp Rent A Car </title>
 
     <asp:PlaceHolder runat="server">
+        
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
@@ -60,7 +63,7 @@
             </div>
         </div>
         <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
