@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Registro_Login_Web
 {
-    public partial class About : System.Web.UI.Page
+    public partial class cUsuarios : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
