@@ -37,7 +37,7 @@
         </div>
 
       <div class="form-row justify-content-center">
-            <asp:GridView ID="UsuarioGridView" runat="server" class="table table-condensed table-bordered table-responsive" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <asp:GridView ID="UsuarioGridView" runat="server" class="table table-condensed table-bordered table-responsive" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" BorderColor="#00FFCC" BorderStyle="Double">
                 <AlternatingRowStyle BackColor="Black" />
                 <Columns>
                     <asp:BoundField DataField="UsuarioId" HeaderText="Usuario Id" />
