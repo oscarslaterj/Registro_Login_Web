@@ -31,28 +31,28 @@
         </div>
         <hr>
         <div class="col-lg-9">
-                <br>
-                <asp:Button ID="BtnBuscar" class="form-control btn btn-primary btn-sm" runat="server" Text="Buscar" />
-            </div>
+            <br>
+            <asp:Button ID="BtnBuscar" class="form-control btn btn-primary btn-sm" runat="server" Text="Buscar" />
         </div>
+    </div>
 
-      <div class="form-row justify-content-center">
-            <asp:GridView ID="UsuarioGridView" runat="server" class="table table-condensed table-bordered table-responsive" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" BorderColor="#00FFCC" BorderStyle="Double">
-                <AlternatingRowStyle BackColor="Black" />
-                <Columns>
-                    <asp:BoundField DataField="UsuarioId" HeaderText="Usuario Id" />
-                    <asp:BoundField DataField="Fecha" HeaderText="Fecha" />
-                    <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
-                    <asp:BoundField DataField="NombreUser" HeaderText="Usuario" />
-                    <asp:BoundField DataField="Contraseña" HeaderText="Contraseña" />
-                    <asp:BoundField DataField="vContraseña" HeaderText="Verificación" />
-                    <asp:BoundField DataField="Email" HeaderText="Email" />
-                    <asp:BoundField DataField="Cedula" HeaderText="Cedula" />
-                    <asp:BoundField DataField="Telefono" HeaderText="Telefono" />
-                    <asp:BoundField DataField="Nivel de Acceso" HeaderText="Nivel de Acceso" />
-                </Columns>
-                <HeaderStyle BackColor="LightCyan" Font-Bold="True" />
-            </asp:GridView>
-        </div>
-        <hr>
+    <div class="form-row justify-content-center">
+        <asp:GridView ID="UsuarioGridView" runat="server" class="table table-condensed table-bordered table-responsive" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" BorderColor="#00FFCC" BorderStyle="Double">
+            <AlternatingRowStyle BackColor="Black" />
+            <Columns>
+                <asp:BoundField DataField="UsuarioId" HeaderText="Usuario Id" />
+                <asp:BoundField DataField="Fecha" HeaderText="Fecha" />
+                <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
+                <asp:BoundField DataField="NombreUser" HeaderText="Usuario" />
+                <asp:BoundField DataField="Contraseña" HeaderText="Contraseña" />
+                <asp:BoundField DataField="vContraseña" HeaderText="Verificación" />
+                <asp:BoundField DataField="Email" HeaderText="Email" />
+                <asp:BoundField DataField="Cedula" HeaderText="Cedula" />
+                <asp:BoundField DataField="Telefono" HeaderText="Telefono" />
+                <asp:BoundField DataField="Nivel de Acceso" HeaderText="Nivel de Acceso" />
+            </Columns>
+            <HeaderStyle BackColor="LightCyan" Font-Bold="True" />
+        </asp:GridView>
+    </div>
+    <hr>
 </asp:Content>

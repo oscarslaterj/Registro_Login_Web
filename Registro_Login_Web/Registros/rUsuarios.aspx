@@ -45,112 +45,77 @@
                 <asp:RequiredFieldValidator ID="UserRequiredFieldValidator1" runat="server" ErrorMessage="Ingrese algun nombre!" ControlToValidate="nomUserTextBox" Display="Dynamic" Font-Bold="True" ForeColor="Red">*</asp:RequiredFieldValidator>
                 <asp:RegularExpressionValidator ID="UserRegularExpressionValidator1" runat="server" ErrorMessage="Ingrese algun nombre!" ControlToValidate="nomUserTextBox" ValidationExpression="^[a-z & A-Z]*$"></asp:RegularExpressionValidator>
             </div>
+
         </div>
-
         <div class="form-group">
-
-            <label class="col-lg-8 control-label">Correo Electrónico</label>
-
+          <label class="col-lg-8 control-label">Correo Electrónico</label>
             <div class="col-lg-8">
-                    <asp:TextBox type="email" class="form-control" ID="EmailTextBox" runat="server" placeholder="Ingresar Correo"></asp:TextBox>
-                </div>
+                <asp:TextBox type="email" class="form-control" ID="EmailTextBox" runat="server" placeholder="Ingresar Correo"></asp:TextBox>
+            </div>
         </div>
 
-
-
         <div class="form-group">
-
             <label class="col-lg-8 control-label col-sm-1">Contraseña</label>
-
             <div class="col-lg-8 col-sm-1 ">
-                 <asp:TextBox type="text" class="form-control" ID="contraseñaTextBox" placeholder="Ingresar Contraseña" runat="server"></asp:TextBox>
+                <asp:TextBox type="text" class="form-control" ID="contraseñaTextBox" placeholder="Ingresar Contraseña" runat="server"></asp:TextBox>
             </div>
-
         </div>
     </div>
 
 
 
-        <div class="form-group">
+    <div class="form-group">
+        <label class="col-lg-8 control-label">Confirmar Contraseña</label>
+        <div class="col-lg-8">
+            <input type="password" class="form-control" name="confirmpassword" />
+        </div>
+    </div>
 
-            <label class="col-lg-8 control-label">Confirmar Contraseña</label>
 
-            <div class="col-lg-8">
-
-                <input type="password" class="form-control" name="confirmpassword" />
-
-            </div>
-
+    <div class="form-group">
+        <label class="col-lg-8 control-label">Fecha de Nacimiento</label>
+        <div class="col-lg-8">
+            <input type="text" class="form-control" name="datetimepicker" id="datetimepicker" data-date-format="YYYY-MM-DD" />
         </div>
 
-
-
-
-        <div class="form-group">
-
-            <label class="col-lg-8 control-label">Fecha de Nacimiento</label>
-
-            <div class="col-lg-8">
-
-                <input type="text" class="form-control" name="datetimepicker" id="datetimepicker" data-date-format="YYYY-MM-DD" />
-
-            </div>
-
+    </div>
+    <div class="form-group">
+        <label class="col-lg-8 control-label">Cedula</label>
+        <div class="col-lg-8">
+            <input type="text" class="form-control" name="cedula" />
         </div>
 
-
-        <div class="form-group">
-
-            <label class="col-lg-8 control-label">Cedula</label>
-
-            <div class="col-lg-8">
-
-                <input type="text" class="form-control" name="cedula" />
-
-            </div>
-
+    </div>
+    <div class="form-group">
+        <label class="col-lg-8 control-label">Teléfono</label>
+        <div class="col-lg-8">
+            <input type="text" class="form-control" name="telefono" />
         </div>
+    </div>
 
-        <div class="form-group">
 
-            <label class="col-lg-8 control-label">Teléfono</label>
 
-            <div class="col-lg-8">
-
-                <input type="text" class="form-control" name="telefono" />
-
-            </div>
-
+    <div class="form-group">
+        <label class="col-lg-8 control-label">Direccion</label>
+        <div class="col-lg-8">
+            <input type="text" class="form-control" name="telefono_cel" />
         </div>
+    </div>
 
 
-
-        <div class="form-group">
-
-            <label class="col-lg-8 control-label">Direccion</label>
-
-            <div class="col-lg-8">
-
-                <input type="text" class="form-control" name="telefono_cel" />
-
-            </div>
-
-        </div>
-
-
-        <div class="form-group">
-            <div class="col-sm-1 col-md-5">
-                <div class="panel">
-                    <div class="text-center">
-                        <div class="form-group">
-                            <asp:Button ID="BtnNuevo" runat="server" Text="Nuevo" class="btn btn-primary btn-sm" />
-                            <asp:Button ID="BtnGuardar" runat="server" Text="Guardar" class="btn btn-success btn-sm" />
-                            <asp:Button ID="BtnEliminar" runat="server" Text="Eliminar" class="btn btn-danger btn-sm" />
-                        </div>
+    <div class="form-group">
+        <div class="col-sm-1 col-md-5">
+            <div class="panel">
+                <div class="text-center">
+                    <div class="form-group">
+                        <asp:Button ID="BtnNuevo" runat="server" Text="Nuevo" class="btn btn-primary btn-sm" />
+                        <asp:Button ID="BtnGuardar" runat="server" Text="Guardar" class="btn btn-success btn-sm" />
+                        <asp:Button ID="BtnEliminar" runat="server" Text="Eliminar" class="btn btn-danger btn-sm" />
                     </div>
                 </div>
             </div>
         </div>
-    
+    </div>
+
 </asp:Content>
 
