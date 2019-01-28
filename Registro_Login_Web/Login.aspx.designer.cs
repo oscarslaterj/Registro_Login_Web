@@ -10,42 +10,42 @@
 namespace Registro_Login_Web {
     
     
-    public partial class rUsuarios {
+    public partial class Login {
         
         /// <summary>
-        /// usuarioidTextBox control.
+        /// NombreLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usuarioidTextBox;
+        protected global::System.Web.UI.WebControls.Label NombreLabel;
         
         /// <summary>
-        /// UsuarioIdRequiredFieldValidator control.
+        /// Username control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator UsuarioIdRequiredFieldValidator;
+        protected global::System.Web.UI.WebControls.TextBox Username;
         
         /// <summary>
-        /// RegularExpressionValidator control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// FechaTextBox control.
+        /// Password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FechaTextBox;
+        protected global::System.Web.UI.WebControls.TextBox Password;
     }
 }
