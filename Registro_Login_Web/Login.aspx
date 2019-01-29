@@ -27,7 +27,7 @@
                             <asp:TextBox ID="Password" runat="server"></asp:TextBox>
                         </div>
                     </div>
-                      <asp:Label ID="ErrorLabel" runat="server" Text=""></asp:Label>
+                    <asp:Label ID="ErrorLabel" runat="server" Text=""></asp:Label>
 
                     <div class="control-group">
                         <!-- Button -->

@@ -48,7 +48,7 @@
 
         </div>
         <div class="form-group">
-          <label class="col-lg-8 control-label">Correo Electrónico</label>
+            <label class="col-lg-8 control-label">Correo Electrónico</label>
             <div class="col-lg-8">
                 <asp:TextBox type="email" class="form-control" ID="EmailTextBox" runat="server" placeholder="Ingresar Correo"></asp:TextBox>
             </div>
