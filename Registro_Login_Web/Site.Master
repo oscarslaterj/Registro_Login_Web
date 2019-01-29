@@ -54,9 +54,9 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/rUsuarios">Registro</a></li>
-                        <li><a runat="server" href="~/cUsuarios">Consulta</a></li>
-                        <li><a runat="server" href="~/Contact">Contacto</a></li>
+                        <li><a runat="server" href="~/rUsuarios.aspx">Registro</a></li>
+                        <li><a runat="server" href="~/cUsuarios.aspx">Consulta</a></li>
+                        <li><a runat="server" href="~/Contact.aspx">Contacto</a></li>
                         <li><a runat="server" href="~/">Login</a></li>
                         <li><a runat="server" href="~/">Salir</a></li>
                     </ul>

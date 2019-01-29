@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Registro_Login_Web.Login" %>
+﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Registro_Login_Web.Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -11,7 +11,7 @@
 
                 <fieldset>
                     <div id="legend">
-                        <h2>Login</h2>
+                        <h2>Iniciar Sesión</h2>
                     </div>
                     <div class="control-group">
                         <!-- Username -->
