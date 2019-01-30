@@ -32,9 +32,10 @@
 
 
         <div class="form-group">
-            <label class="col-lg-8 control-label col-sm-1">Apellidos</label>
+            <asp:Label ID="Label1" runat="server" Text="Label">Apellidos</asp:Label>
             <div class="col-sm-1 col-lg-8 col-xs6">
-                <input type="text" class="form-control" name="apellido" />
+                <asp:TextBox ID="TextBox1" runat="server">Apellidos</asp:TextBox>
+                <asp:RegularExpressionValidator ID="ApellidosRegularExpressionValidator" runat="server" ErrorMessage="Ingrese algun apellido"></asp:RegularExpressionValidator>
             </div>
         </div>
 
