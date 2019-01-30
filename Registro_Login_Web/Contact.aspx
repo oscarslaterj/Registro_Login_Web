@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Registro_Login_Web.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="head" runat="server">
+    </asp:Content>
+    <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h3>Contactate Con Nosotros</h3>
     <address>
         Urbanizacion Almanzar<br />

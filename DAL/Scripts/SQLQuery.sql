@@ -1,7 +1,7 @@
 
-create database UsuariosDB
+create database UsuariosDb
 go 
-use UsuariosDB
+use UsuariosDb
 go
 create table Usuarios(
 UsuarioId int primary key identity,
