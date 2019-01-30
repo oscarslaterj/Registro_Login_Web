@@ -52,6 +52,7 @@
             <label class="col-lg-8 control-label">Correo Electrónico</label>
             <div class="col-lg-8">
                 <asp:TextBox type="email" class="form-control" ID="EmailTextBox" runat="server" placeholder="Ingresar Correo"></asp:TextBox>
+                <asp:RegularExpressionValidator ID="EmailExpressionValidator" runat="server" ErrorMessage="RegularExpressionValidator">Ingrese correo electronico</asp:RegularExpressionValidator>
             </div>
         </div>
 
@@ -59,6 +60,7 @@
             <label class="col-lg-8 control-label col-sm-1">Contraseña</label>
             <div class="col-lg-8 col-sm-1 ">
                 <asp:TextBox type="text" class="form-control" ID="contraseñaTextBox" placeholder="Ingresar Contraseña" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="ContraValidar" runat="server" ErrorMessage="El campo &quot;Contraseña&quot; esta vacio" ControlToValidate="ContraseñaTextBox" ForeColor="Red" Display="Dynamic" ToolTip="Campo Contraseña obligatorio" ValidationGroup="Guardar">*</asp:RequiredFieldValidator>
             </div>
         </div>
     </div>
@@ -68,7 +70,9 @@
     <div class="form-group">
         <label class="col-lg-8 control-label">Confirmar Contraseña</label>
         <div class="col-lg-8">
-            <input type="password" class="form-control" name="confirmpassword" />
+            <asp:TextBox ID="TextBox2" runat="server">Confirmar Contraseña</asp:TextBox>
+            <asp:CompareValidator ID="ComparaContraseñas" runat="server" ErrorMessage="Las Contraseñas no son iguales" ControlToValidate="ConfirmarContraseñaTextBox" ControlToCompare="ContraseñaTextBox" ForeColor="Red" Display="Dynamic" ToolTip="Las Contraseñas no son iguales" ValidationGroup="Guardar">*</asp:CompareValidator>
+            <asp:RequiredFieldValidator ID="ValidaConfirmarContraseña" runat="server" ErrorMessage="El campo &quot;Nombres&quot; estas vacio" ControlToValidate="ConfirmarContraseñaTextBox" ForeColor="Red" Display="Dynamic" ToolTip="Campo Confirmar Contraseña obligatorio" ValidationGroup="Guardar">*</asp:RequiredFieldValidator>
         </div>
     </div>
 
@@ -90,7 +94,9 @@
     <div class="form-group">
         <label class="col-lg-8 control-label">Teléfono</label>
         <div class="col-lg-8">
-            <input type="text" class="form-control" name="telefono" />
+            <asp:TextBox ID="TextBox3" runat="server">Telefono</asp:TextBox>
+            <asp:RegularExpressionValidator ID="ValidaTelefono" runat="server" ErrorMessage='Campo "Telefono" solo acepta numeros' ControlToValidate="TelefonoTextBox" ValidationExpression="^[0-9]*" Text="*" ForeColor="Red" Display="Dynamic" ToolTip="Solo acepta numeros" ValidationGroup="Guardar"></asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="ValidaVacioTelefono" runat="server" ErrorMessage="El campo &quot;Telefono&quot; esta vacio" ControlToValidate="TelefonoTextBox" ForeColor="Red" Display="Dynamic" ToolTip="Campo Telefono es obligatorio" ValidationGroup="Guardar">*</asp:RequiredFieldValidator>
         </div>
     </div>
 
